@@ -1,0 +1,157 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="360dp"
+    android:height="240dp"
+    android:viewportWidth="360"
+    android:viewportHeight="240">
+
+    <!-- Gradient for the glorious Dak Lak Sunset Sky -->
+    <gradient
+        android:id="@+id/sunset_sky_gradient"
+        android:type="linear"
+        android:startX="180"
+        android:startY="0"
+        android:endX="180"
+        android:endY="180">
+        <item android:offset="0.0" android:color="#FDBA74"/> <!-- Warm Light Yellow/Orange -->
+        <item android:offset="0.4" android:color="#F97316"/> <!-- Tangy Orange -->
+        <item android:offset="0.8" android:color="#C2410C"/> <!-- Terracotta Red -->
+        <item android:offset="1.0" android:color="#451A03"/> <!-- Dark soil/ground horizon shadow -->
+    </gradient>
+
+    <gradient
+        android:id="@+id/glowing_sun_gradient"
+        android:type="radial"
+        android:centerX="180"
+        android:centerY="85"
+        android:gradientRadius="45">
+        <item android:offset="0.0" android:color="#FFFFFF"/>
+        <item android:offset="0.2" android:color="#FEF08A"/>
+        <item android:offset="1.0" android:color="#00FFA83F"/> <!-- Fade to orange transparent -->
+    </gradient>
+
+    <gradient
+        android:id="@+id/monument_gradient"
+        android:type="linear"
+        android:startX="180"
+        android:startY="60"
+        android:endX="180"
+        android:endY="160">
+        <item android:offset="0.0" android:color="#FFFFFF"/>
+        <item android:offset="0.6" android:color="#CBD5E1"/>
+        <item android:offset="1.0" android:color="#64748B"/>
+    </gradient>
+
+    <!-- Sky Background -->
+    <path
+        android:pathData="M0,0 H360 V240 H0 Z"
+        android:fillColor="@id/sunset_sky_gradient"/>
+
+    <!-- Glowing Sun Disc at the upper horizontal center -->
+    <path
+        android:pathData="M180,40 A45,45 0 1 0 180,130 A45,45 0 1 0 180,40 Z"
+        android:fillColor="@id/glowing_sun_gradient"/>
+
+    <!-- Distant Mountains of the Central Highlands -->
+    <!-- Mountain Left -->
+    <path
+        android:pathData="M-20,165 Q40,135 110,160 L110,185 L-20,185 Z"
+        android:fillColor="#8C2C02"
+        android:fillAlpha="0.6"/>
+    <!-- Mountain Right -->
+    <path
+        android:pathData="M230,165 Q300,125 380,160 L380,185 L230,185 Z"
+        android:fillColor="#7E2401"
+        android:fillAlpha="0.65"/>
+    <path
+        android:pathData="M90,170 Q180,140 280,170 L280,195 L90,195 Z"
+        android:fillColor="#531401"
+        android:fillAlpha="0.8"/>
+
+    <!-- Buôn Ma Thuột Roundabout Circular Green Grass Ring & Roads -->
+    <path
+        android:pathData="M60,190 C60,170 300,170 300,190 C300,210 60,210 60,190 Z"
+        android:fillColor="#1B3F22"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"/>
+    <!-- Outer road ring -->
+    <path
+        android:pathData="M40,193 C40,165 320,165 320,193 C320,221 40,221 40,193 Z"
+        android:strokeColor="#FFD8A8"
+        android:strokeWidth="1.5"
+        android:fillColor="#0000" />
+
+    <!-- Distant City Buildings Silhouette -->
+    <!-- Left tall building (Bưu điện/Khách sạn) -->
+    <path
+        android:pathData="M10,130 H48 V180 H10 Z"
+        android:fillColor="#3A1D0F"/>
+    <path
+        android:pathData="M16,136 H24 V144 H16 Z M30,136 H38 V144 H30 Z M16,150 H24 V158 H16 Z M30,150 H38 V158 H30 Z M16,164 H24 V172 H16 Z M30,164 H38 V172 H30 Z"
+        android:fillColor="#FEF08A"
+        android:fillAlpha="0.4"/>
+
+    <!-- Right prominent structures - nhat dan trong nang chieu -->
+    <path
+        android:pathData="M305,142 H345 V180 H305 Z"
+        android:fillColor="#2D1302"/>
+    <path
+        android:pathData="M312,148 H320 V156 H312 Z M328,148 H336 V156 H328 Z"
+        android:fillColor="#FEF08A"
+        android:fillAlpha="0.3"/>
+
+    <!-- Iconic Buôn Ma Thuột Victory Monument (Tượng đài Chiến thắng Ngã sáu) -->
+    <!-- Massive arching white pillar columns -->
+    <path
+        android:pathData="M162,175 C164,130 174,105 178,92 L182,92 C186,105 196,130 198,175 L188,175 C186,145 181,120 180,105 C179,120 174,145 172,175 Z"
+        android:fillColor="@id/monument_gradient"/>
+
+    <!-- Inner small structural spires -->
+    <path
+        android:pathData="M176,175 L178,115 L182,115 L184,175 Z"
+        android:fillColor="#E2E8F0"/>
+
+    <!-- Monument Circular Podium Base -->
+    <path
+        android:pathData="M150,175 H210 V184 H150 Z"
+        android:fillColor="#475569"
+        android:strokeColor="#94A3B8"
+        android:strokeWidth="0.8"/>
+    <path
+        android:pathData="M140,183 Q180,177 220,183 L210,192 Q180,186 150,192 Z"
+        android:fillColor="#1E293B"/>
+
+    <!-- The Historic Liberating Tank #390 (Mã số xe tăng lịch sử tại Ngã sáu) -->
+    <!-- Stylized chassis and turret on top of pedestal -->
+    <path
+        android:pathData="M170,168 H190 V174 H170 Z M174,163 H186 V168 H174 Z"
+        android:fillColor="#1C2D1E"/>
+    <!-- Tank gun barrel pointing left -->
+    <path
+        android:pathData="M162,165 H174 V167 H162 Z"
+        android:fillColor="#142015"/>
+
+    <!-- Decorative Palm Trees surrounding roundabout grass ring -->
+    <!-- Left Palm Trees -->
+    <path
+        android:pathData="M84,184 Q82,168 80,158"
+        android:strokeColor="#200A02"
+        android:strokeWidth="1.8"/>
+    <path
+        android:pathData="M80,158 Q66,154 60,155 M80,158 Q72,148 68,145 M80,158 Q85,145 92,143 M80,158 Q92,154 96,158 M80,158 Q92,163 94,166"
+        android:strokeColor="#2F5C24"
+        android:strokeWidth="1.5"
+        android:fillColor="#0000" />
+
+    <!-- Right Palm Trees -->
+    <path
+        android:pathData="M276,184 Q278,168 280,158"
+        android:strokeColor="#200A02"
+        android:strokeWidth="1.8"/>
+    <path
+        android:pathData="M280,158 Q266,154 262,157 M280,158 Q272,148 268,144 M280,158 Q285,145 292,143 M280,158 Q292,154 296,158 M280,158 Q292,163 294,166"
+        android:strokeColor="#2F5C24"
+        android:strokeWidth="1.5"
+        android:fillColor="#0000" />
+
+</vector>

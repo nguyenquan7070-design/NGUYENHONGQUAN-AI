@@ -1,0 +1,6 @@
+{
+  "name": "Đắk Lắk AI",
+  "description": "Nền tảng AI cộng đồng cho người dân tỉnh Đắk Lắk. AI Vì Cuộc Sống.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

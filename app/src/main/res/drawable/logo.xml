@@ -1,0 +1,105 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Gradient definitions -->
+    <gradient
+        android:id="@+id/bronze_ring_gradient"
+        android:type="linear"
+        android:startX="0"
+        android:startY="0"
+        android:endX="200"
+        android:endY="200">
+        <item android:offset="0.0" android:color="#FFD1A4"/>
+        <item android:offset="0.3" android:color="#FFA15F"/>
+        <item android:offset="0.7" android:color="#D86B27"/>
+        <item android:offset="1.0" android:color="#8A3D12"/>
+    </gradient>
+
+    <gradient
+        android:id="@+id/gold_triangle_gradient"
+        android:type="linear"
+        android:startX="100"
+        android:startY="30"
+        android:endX="100"
+        android:endY="170">
+        <item android:offset="0.0" android:color="#FFE8A3"/>
+        <item android:offset="0.5" android:color="#FFBE3B"/>
+        <item android:offset="1.0" android:color="#D18100"/>
+    </gradient>
+
+    <gradient
+        android:id="@+id/pedestal_gradient"
+        android:type="linear"
+        android:startX="40"
+        android:startY="155"
+        android:endX="160"
+        android:endY="185">
+        <item android:offset="0.0" android:color="#FFFFFF"/>
+        <item android:offset="0.5" android:color="#E2E8F0"/>
+        <item android:offset="1.0" android:color="#94A3B8"/>
+    </gradient>
+
+    <!-- Outer Pedestal Frame/Shadow base -->
+    <path
+        android:pathData="M30,175 L170,175 L160,190 L40,190 Z"
+        android:fillColor="@id/pedestal_gradient"/>
+
+    <!-- Main Outer Bronze Medallion Circle Ring -->
+    <path
+        android:pathData="M100,10 A85,85 0 1 0 100,180 A85,85 0 1 0 100,10 Z M100,18 A77,77 0 1 1 100,172 A77,77 0 1 1 100,18 Z"
+        android:fillColor="@id/bronze_ring_gradient"/>
+
+    <!-- Triangle / Communal A-frame Roof structure -->
+    <path
+        android:pathData="M100,32 L162,138 L146,144 L100,65 L54,144 L38,138 Z"
+        android:fillColor="@id/gold_triangle_gradient"/>
+
+    <!-- Outer supporting wings inside circle -->
+    <path
+        android:pathData="M100,48 L152,135 L48,135 Z"
+        android:strokeColor="#A15A14"
+        android:strokeWidth="1.5"
+        android:fillColor="#1512" />
+
+    <!-- Traditional Highlands Sunburst (Dong Son Star) at the apex -->
+    <!-- 8-Pointed Golden Star -->
+    <path
+        android:pathData="M100,72 L103,82 L112,80 L105,87 L111,94 L102,91 L100,100 L98,91 L89,94 L95,87 L88,80 L97,82 Z"
+        android:fillColor="#FFEAA7"/>
+    <path
+        android:pathData="M100,82 A4,4 0 1 0 100,90 A4,4 0 1 0 100,82 Z"
+        android:fillColor="#FF7A00"/>
+
+    <!-- Central Highland Decorative Base Wave (Sông Sêrêpốk) -->
+    <path
+        android:pathData="M44,145 C60,135 80,155 100,145 C120,135 140,155 156,145 L156,155 C140,165 120,145 100,155 C80,165 60,145 44,155 Z"
+        android:fillColor="#FF7621"/>
+
+    <!-- Bold representation of DAK LAK and AI FOR LIFE in graphic paths -->
+    <!-- Bottom Plate -->
+    <path
+        android:pathData="M52,118 L148,118 L142,132 L58,132 Z"
+        android:fillColor="#532C0D"
+        android:strokeColor="#FFC875"
+        android:strokeWidth="1"/>
+
+    <!-- Graphic text blocks for DAK LAK (stylized) -->
+    <path
+        android:pathData="M64,121 H67 V123 H64 V121 Z M69,121 H72 L70.5,123.5 L69,121 Z M74,121 H76.5 V123 H74 V121 Z M79,121 H81 M80,121 V123.5 M83,121 H86"
+        android:strokeColor="#FFF4D1"
+        android:strokeWidth="1.2"/>
+    <path
+        android:pathData="M90,121 H93 V123.5 H90 Z M95,121 H97.5 V123.5 H95 Z M99,121 H102"
+        android:strokeColor="#FFF4D1"
+        android:strokeWidth="1.2"/>
+
+    <!-- Smaller sub-plate representing AI FOR LIFE -->
+    <path
+        android:pathData="M65,134 L135,134 L130,144 L70,144 Z"
+        android:fillColor="#A24A00"/>
+
+</vector>
